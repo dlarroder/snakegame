@@ -12,6 +12,7 @@ const moveDown = ([t, l]) => [t + 1, l];
 
 let gameInterval = null;
 // --- raendering ---
+// --- hello ---
 
 function initializeCanvas() {
   for (let i = 0; i < ROWS; i++) {
