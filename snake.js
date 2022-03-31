@@ -1,4 +1,5 @@
 const canvas = document.getElementById("canvas");
+const restartBtn = document.getElementById("restart-btn");
 
 const ROWS = 30;
 const COLS = 50;
@@ -12,6 +13,8 @@ const moveDown = ([t, l]) => [t + 1, l];
 
 let gameInterval = null;
 // --- rendering ---
+
+restartBtn.addEventListener("click", () => location.reload());
 
 function initializeCanvas() {
   for (let i = 0; i < ROWS; i++) {
@@ -39,7 +42,7 @@ function drawCanvas() {
       let pixel = pixels.get(key);
       let background = "white";
       if (key === currentFoodKey) {
-        background = "tomato";
+        background = "#556B2F";
       } else if (currentSnakeKeys.has(key)) {
         background = "black";
       }

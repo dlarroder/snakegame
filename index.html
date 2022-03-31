@@ -10,17 +10,35 @@
       #canvas {
         width: 500px;
         height: 300px;
-        border: 5px solid tomato;
+        border: 5px solid black;
         position: relative;
         box-sizing: content-box;
       }
 
       * {
-        background-color: red;
+        background-color: #556B2F;
         box-sizing: border-box;
       }
+
+      a {
+        color: #F5F5F5
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        gap: 10px;
+        align-items: center; 
+        zoom: 200%;
+      }
+
     </style>
   </head>
-  <body id="canvas"></body>
+  <body>
+    <span>3310 Snake Game by <a href="https://www.dalelarroder.com">dlarroder</a></span>
+    <div id="canvas"></div>
+    <button id="restart-btn">Restart</button>
+  </body>
   <script src="snake.js"></script>
 </html>
